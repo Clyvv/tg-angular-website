@@ -14,8 +14,8 @@ namespace lglc {
 
     $routeConfig = [{
       path: "/home",
-      component: "lglcDashboard",
-      name: "Dashboard",
+      component: "lglcHome",
+      name: "Home",
       useAsDefault: true
     }];
 
