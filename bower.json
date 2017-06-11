@@ -1,0 +1,35 @@
+{
+  "name": "lglc",
+  "authors": [
+    "Clive T Mawoko <cmawoko@gmail.com>"
+  ],
+  "description": "Tichaona Govere Law Chambers Website",
+  "main": "",
+  "keywords": [
+    "Tichaona",
+    "Govere",
+    "Law",
+    "Chambers"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-component-router": "^0.2.1",
+    "bootstrap": "^3.3.7",
+    "angular-resource": "^1.5.8",
+    "components-font-awesome": "^4.7.0",
+    "moment": "^2.15.2",
+    "angular-bootstrap": "^2.2.0"
+  },
+  "resolutions": {
+    "angular-bootstrap": "^2.2.0"
+  }
+}
