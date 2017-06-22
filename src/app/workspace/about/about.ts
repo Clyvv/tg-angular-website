@@ -3,12 +3,16 @@ namespace lglc.ui {
 
     let app = angular.module("lglc");
 
-    interface IHeader extends ng.IController {
+    interface IAbout extends ng.IController {
 
     }
 
-    class Controller implements IHeader {
-        
+    class Controller implements IAbout {
+
+        home:string = "IN About";
+        $onInit = () => {
+            console.log(this.home);
+        }
     }
 
     class Component implements ng.IComponentOptions {
@@ -16,15 +20,16 @@ namespace lglc.ui {
         bindings: { [binding: string]: string };
 
         constructor(
-            public templateUrl = "app/components/header/header.html",
+            public templateUrl = "app/workspace/about/about.html",
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
+
             };
 
         }
     }
 
-    app.component("lglcHeader", new Component());
+    app.component("lglcAbout", new Component());
 
 }

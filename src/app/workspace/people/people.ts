@@ -1,15 +1,18 @@
-namespace mrs.ui {
+namespace lglc.ui {
     "use strict";
 
     let app = angular.module("lglc");
 
-    interface IHome extends ng.IController {
+    interface IPeople extends ng.IController {
 
     }
 
-    class Controller implements IHome {
+    class Controller implements IPeople {
 
-        
+        home:string = "IN People";
+        $onInit = () => {
+            console.log(this.home);
+        }
     }
 
     class Component implements ng.IComponentOptions {
@@ -17,7 +20,7 @@ namespace mrs.ui {
         bindings: { [binding: string]: string };
 
         constructor(
-            public templateUrl = "app/workspace/home.html",
+            public templateUrl = "app/workspace/people/people.html",
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
@@ -27,6 +30,6 @@ namespace mrs.ui {
         }
     }
 
-    app.component("lglcHome", new Component());
+    app.component("lglcPeople", new Component());
 
 }
