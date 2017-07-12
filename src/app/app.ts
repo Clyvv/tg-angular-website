@@ -10,7 +10,7 @@ namespace lglc {
   app.value("$routerRootComponent", "lglcApp");
 
   class LglcApp implements ng.IComponentOptions {
-    templateUrl = "app/app.html";
+    templateUrl = "app/workspace/app.html";
 
     $routeConfig = [{
       path: "/home",
