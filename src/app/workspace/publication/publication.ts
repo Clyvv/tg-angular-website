@@ -9,10 +9,7 @@ namespace lglc.ui {
 
     class Controller implements IPublication {
 
-        home:string = "IN Publication";
-        $onInit = () => {
-            console.log(this.home);
-        }
+       
     }
 
     class Component implements ng.IComponentOptions {

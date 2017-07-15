@@ -9,10 +9,7 @@ namespace lglc.ui {
 
     class Controller implements IContact {
 
-        home:string = "IN Contact";
-        $onInit = () => {
-            console.log(this.home);
-        }
+       
     }
 
     class Component implements ng.IComponentOptions {

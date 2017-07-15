@@ -9,10 +9,7 @@ namespace lglc.ui {
 
     class Controller implements IAbout {
 
-        home:string = "IN About";
-        $onInit = () => {
-            console.log(this.home);
-        }
+        
     }
 
     class Component implements ng.IComponentOptions {

@@ -9,10 +9,7 @@ namespace lglc.ui {
 
     class Controller implements ICareer {
 
-        home:string = "IN Career";
-        $onInit = () => {
-            console.log(this.home);
-        }
+       
     }
 
     class Component implements ng.IComponentOptions {

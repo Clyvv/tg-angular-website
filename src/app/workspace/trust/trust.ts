@@ -9,10 +9,7 @@ namespace lglc.ui {
 
     class Controller implements ITrust {
 
-        home:string = "IN Trust";
-        $onInit = () => {
-            console.log(this.home);
-        }
+       
     }
 
     class Component implements ng.IComponentOptions {
