@@ -1,13 +1,13 @@
-namespace lglc.ui {
+namespace glc.ui {
     "use strict";
 
-    let app = angular.module("lglc");
+    let app = angular.module("glc");
 
-    interface ICareer extends ng.IController {
+    interface IPublication extends ng.IController {
 
     }
 
-    class Controller implements ICareer {
+    class Controller implements IPublication {
 
        
     }
@@ -17,7 +17,7 @@ namespace lglc.ui {
         bindings: { [binding: string]: string };
 
         constructor(
-            public templateUrl = "app/workspace/career/career.html",
+            public templateUrl = "app/workspace/clientele/clientele.html",
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
@@ -27,6 +27,6 @@ namespace lglc.ui {
         }
     }
 
-    app.component("lglcCareer", new Component());
+    app.component("glcClientele", new Component());
 
 }

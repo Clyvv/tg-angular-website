@@ -1,7 +1,7 @@
-namespace lglc.ui {
+namespace glc.ui {
     "use strict";
 
-    let app = angular.module("lglc");
+    let app = angular.module("glc");
 
     interface IHome extends ng.IController {
 
@@ -26,6 +26,6 @@ namespace lglc.ui {
         }
     }
 
-    app.component("lglcHome", new Component());
+    app.component("glcHome", new Component());
 
 }
