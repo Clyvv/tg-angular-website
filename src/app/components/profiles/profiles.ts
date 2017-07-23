@@ -3,18 +3,19 @@ namespace glc.ui {
 
     let app = angular.module("glc");
 
-    interface IPeople extends ng.IController {
-
+    interface ILinks extends ng.IController {
+        selected: (id: Object) => void;
     }
 
-    class Controller implements IPeople {
-
-        $router:any
+    class Controller implements ILinks {
+        id: string;
+        public selected: (id: Object) => void;
         profiles: Array<data.ILawyerProfile> = [];
 
         static $inject = ["GlcService"];
         constructor(private glcService: data.IGlcService) {
         }
+
 
         $onInit = () => {
             this.glcService.queryProfiles().then((response) => {
@@ -22,10 +23,10 @@ namespace glc.ui {
             })
         }
 
-        selected = (id: string): void => {
-            this.$router.navigate(["SingleProfile", { id: id }]);
+        changeProfile = (id: string) => {
+            this.id = id;
+            this.selected({ id: id });
         }
-
 
     }
 
@@ -34,16 +35,17 @@ namespace glc.ui {
         bindings: { [binding: string]: string };
 
         constructor(
-            public templateUrl = "app/workspace/profiles/profiles.html",
+            public templateUrl = "app/components/profiles/profiles.html",
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
-                $router: "<"
+                selected: "&",
+                id: "<"
             };
 
         }
     }
 
-    app.component("glcProfiles", new Component());
+    app.component("glcLawyerProfiles", new Component());
 
 }

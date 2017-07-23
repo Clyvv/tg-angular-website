@@ -1,7 +1,34 @@
+<style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+
+<script>
+    function initMap() {
+        var govere = { lat: -17.8241557, lng: 31.05257430000006 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: govere
+        });
+        var marker = new google.maps.Marker({
+            position: govere,
+            map: map
+        });
+    }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNBOQnV71arM1crNhk_Fjg4tovS_Ec0Fc&callback=initMap">
+
+</script>
+
+
 <div class="col-xs-4">
     <div class="panel panel-default">
+        <div class="panel-heading">Find Us Here</div>
         <div class="panel-body">
-
+            <div id="map"></div>
         </div>
     </div>
 </div>
@@ -9,7 +36,40 @@
     <div class="panel panel-default">
         <div class="panel-heading">Home | Contact Us</div>
         <div class="panel-body">
+            <br><br>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-map-marker" id="contact"></i>
+                            <p id="contactp">12th Floor Causeway Building<br>Corner 3rd St/Central Avenue<br>Harare</p>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-envelope" id="contact"></i>
+                            <p id="contactp"> info@goverelawchambers.co.zw</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-phone" id="contact"></i>
+                            <p id="contactp">+263-4-255605, +263-4-255693/710, +263-4-251883<br>+263772746631, +263718290463</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
 </div>

@@ -18,10 +18,9 @@ namespace glc.ui {
 
 
         $onInit = () => {
-
-                this.glcService.queryServices().then((response) => {
-                    this.services = response.data;
-                })
+            this.glcService.queryServices().then((response) => {
+                this.services = response.data;
+            })
         }
 
         changeService = (service: string) => {
@@ -40,7 +39,8 @@ namespace glc.ui {
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
-                selected: "&"
+                selected: "&",
+                service: "<"
             };
 
         }

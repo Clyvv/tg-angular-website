@@ -1,5 +1,5 @@
 <ul class="nav nav-pills nav-stacked" ng-repeat="s in vm.services">
-  <li role="presentation" ng-if="vm.service!=s.name"><a href="" ng-click="vm.changeService(s.name)">{{s.name}}</a></li>
-  <li role="presentation" class="active" ng-if="vm.service==s.name"><a href="" ng-click="vm.changeService(s.name)">{{s.name}}</a></li>
+  <li role="presentation" ng-if="vm.service!=s.id"><a href="" ng-click="vm.changeService(s.id)">{{s.name}}</a></li>
+  <li role="presentation" class="active" ng-if="vm.service==s.id"><a href="" ng-click="vm.changeService(s.id)">{{s.name}}</a></li>
 
 </ul>

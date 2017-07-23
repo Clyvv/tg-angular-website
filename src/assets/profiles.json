@@ -1,0 +1,38 @@
+[
+    {
+        "id": "tichaona-govere",
+        "profileType": "partner",
+        "name": "Tichaona Govere",
+        "position": "Senior Partner",
+        "yearOfRegistration": "1979",
+        "qualification": "BL (Hons) LLB (Rhodesia)",
+        "email": "tg@goverelawchambers.co.zw",
+        "status": "Admitted to practise as a Legal Practitioner, Notary Public and Conveyancer in Zimbabwe",
+        "areaofPractice": "Family/ Matrimonial Law, Criminal Law, Litigation. Fraser Edkins heads the family law department at the firm specializing in divorce litigation. Fraser is also a committee member and past Chairman of the History Society of Zimbabwe. Before joining the firm, Fraser was a Provincial Magistrate presiding over civil and criminal trials for several years. Fraser has a wealth of experience in civil and criminal litigation. Fraser is also our Staff Partner and a member of our Management Committee.",
+        "imgUrl": "img/profiles/tichaona-govere.jpg"
+    },
+    {
+        "id": "clive-mawoko",
+        "profileType": "partner",
+        "name": "Clive T Mawoko",
+        "position": "Managing Partner",
+        "yearOfRegistration": "1990",
+        "qualification": "BL (Hons) LLB (Zim), MBA (UZ) Certificate in Advanced Taxation & VAT (UNISA); Certificate in Advanced Corporate & Securities Law(UNISA)",
+        "email": "cmawoko@gmail.com",
+        "status": "Admitted to practice as a Legal Practitioner, Notary Public and Conveyancer in Zimbabwe",
+        "areaofPractice": "Conveyancing, Notarial Practice, Intellectual Property, Securities, Taxation, Trusts, Commercial and Corporate Law and Energy (oil, gas and electricity). She is heavily involved in corporate governance and compliance, regulatory issues, more particularly the interpretation of a diverse range of legislation, evaluating its impact on organizations and policy development. Thembiwe leads the intellectual property division of the firm and has many years of experience in conveyancing and property law. Thembiwe sits on various boards including Ariston Holdings Limited, NICOZ Diamond Insurance Limited (where she is Deputy Chairperson of the Board), National Tyre Services Limited and African Century Limited. Thembiwe’s past directorships include Zimbabwe Allied Banking Group Limited, Fidelity Asset Management and Zimbabwe Electricity Supply Authority. Thembiwe is an avid member of the International Bar Association in which she is a member of the African Regional, Mergers and Acquisitions and Practise Management Forums and Committees.",
+        "imgUrl": "img/profiles/clive-mawoko.jpg"
+    },
+    {
+        "id": "olga-marima",
+        "profileType": "associate",
+        "name": "Olga T Marima",
+        "position": "Senior Associate",
+        "yearOfRegistration": "2000",
+        "qualification": "LLBS (Hons) (Zim) LLM in Corporate Law (including drafting of commercial contracts) (UNISA) – submitting her dissertation.",
+        "email": "otmarima@goverelawchambers.co.zw",
+        "status": "Admitted to practise as a Legal Practitioner, Notary Public and Conveyancer in Zimbabwe",
+        "areaofPractice": "Corporate and commercial law (drafting of commercial contracts), Intellectual Property, Licensing, insolvency law, property law (securities, foreclosures, landlord and tenant law), debt recovery and family Law. Olga T Marima has a significant client base in debt recovery, foreclosure proceedings, creditor protection proceedings in insolvency proceedings, landlord and tenant law. Eunice has experience in intellectual property law, civil litigation, commercial and corporate law, licensing (shop and liquor licensing). Eunice is registered as a postgraduate student with UNISA and she is in the final stages of her Masters in Corporate Law with UNISA (LLM Corporate Law) specializing in company law and drafting of commercial agreements.",
+        "imgUrl": "img/profiles/olga-marima.jpg"
+    }
+]

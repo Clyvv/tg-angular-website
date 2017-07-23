@@ -9,8 +9,13 @@ namespace glc.ui {
 
     class Controller implements IExpertise {
         $router: any;
+        service: string;
         selected = (service: string) => {
             this.$router.navigate(["SingleAreaOfPractice", { service: service }]);
+        }
+
+        $routerOnActivate = (params: any) => {
+            this.service = params.params.service;
         }
     }
 
@@ -19,7 +24,7 @@ namespace glc.ui {
         bindings: { [binding: string]: string };
 
         constructor(
-            public templateUrl = "app/workspace/areas-of-practice/areas-of-practice.html",
+            public templateUrl = "app/workspace/single-area-of-practice/area-of-practice.html",
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
@@ -29,6 +34,6 @@ namespace glc.ui {
         }
     }
 
-    app.component("glcAreasOfPractice", new Component());
+    app.component("glcSingleAreaOfPractice", new Component());
 
 }

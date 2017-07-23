@@ -8,20 +8,20 @@ namespace glc.ui {
     }
 
     class Controller implements ILinks {
-        service: string;
-        areaOfPractice: data.IService;
-        services: Array<data.IService> = [];
+        id: string;
+        profile: data.ILawyerProfile;
+        profiles: Array<data.ILawyerProfile> = [];
         static $inject = ["GlcService"];
         constructor(private glcService: data.IGlcService) {
         }
 
         $onChanges = (onChangesObj: ng.IOnChangesObject) => {
-            if (this.service)
-                this.glcService.queryServices().then((response) => {
-                    this.services = response.data;
-                    this.services.forEach((service) => {
-                        if (this.service == service.id) {
-                            this.areaOfPractice = service;
+            if (this.id)
+                this.glcService.queryProfiles().then((response) => {
+                    this.profiles = response.data;
+                    this.profiles.forEach((profile) => {
+                        if (this.id == profile.id) {
+                            this.profile = profile;
                         }
                     })
                 })
@@ -34,16 +34,16 @@ namespace glc.ui {
         bindings: { [binding: string]: string };
 
         constructor(
-            public templateUrl = "app/components/services/selected.html",
+            public templateUrl = "app/components/profiles/selected.html",
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
-                service: "<"
+                id: "<"
             };
 
         }
     }
 
-    app.component("glcServiceSelected", new Component());
+    app.component("glcProfileSelected", new Component());
 
 }
