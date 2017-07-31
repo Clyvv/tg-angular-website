@@ -8,6 +8,7 @@ namespace glc.ui {
     }
 
     class Controller implements IHome {
+        page: string = "Home";
 
     }
 

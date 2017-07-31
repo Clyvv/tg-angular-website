@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <nav class="navbar navbar-default bootsnav">
         <div class="navbar-top bg-grey fix">
             <div class="container">
@@ -24,8 +24,9 @@
                 </div>
             </div>
         </div>
+        
         <div class="container">
-            <!-- Start Header Navigation -->
+            <!-- Start Header Navigation 
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
@@ -37,19 +38,52 @@
             </div>
             <!-- End Header Navigation -->
 
-            <!-- navbar menu -->
+<!-- navbar menu 
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="" ng-link="['Home']">Home</a></li>
-                    <li><a href="" ng-link="['About']">About Us</a></li>
-                    <li><a href="" ng-link="['Profiles']">Lawyer Profiles</a></li>
-                    <li><a href="" ng-link="['AreasOfPractice']">Areas of Practice</a></li>
-                    <li><a href="" ng-link="['Clientele']">Clientele</a></li>
-                    <li><a href="" ng-link="['Contact']">Contact Us</a></li>
+                    <li class="active" ><a  href="" ui-sref="Home">Home</a></li>
+                    <li><a href="" ui-sref="About">About Us</a></li>
+                    <li><a href="" ui-sref="Profiles">Lawyer Profiles</a></li>
+                    <li><a href="" ui-sref="AreasOfPractice">Areas of Practice</a></li>
+                    <li><a href="" ui-sref="Clientele">Clientele</a></li>
+                    <li><a href="" ui-sref="Contact">Contact Us</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- /.navbar-collapse 
         </div>
 
     </nav>
-</div>
+</div> -->
+
+<header id="header">
+    <!--/.banner-->
+    <div class="text-center">
+        <img src="img\banner.png" alt="banner">
+    </div>
+
+
+    <nav class="navbar navbar-inverse" role="banner">
+
+        <div class="collapse navbar-collapse text text-center">
+            <ul class="nav navbar-nav">
+                <li class="active" ng-if="vm.page=='Home'"><a href="" ui-sref="Home">Home</a></li>
+                <li ng-if="vm.page!='Home'"><a href="" ui-sref="Home">Home</a></li>
+                <li ng-if="vm.page!='About'"><a href="" ui-sref="About">About Us</a></li>
+                <li class="active" ng-if="vm.page=='About'"><a href="" ui-sref="About">About Us</a></li>
+                <li ng-if="vm.page!='Profiles'"><a href="" ui-sref="Profiles">Lawyer Profiles</a></li>
+                <li class="active" ng-if="vm.page=='Profiles'"><a href="" ui-sref="Profiles">Lawyer Profiles</a></li>
+                <li ng-if="vm.page!='AreasOfPractice'"><a href="" ui-sref="AreasOfPractice">Areas of Practice</a></li>
+                <li class="active" ng-if="vm.page=='AreasOfPractice'"><a href="" ui-sref="AreasOfPractice">Areas of Practice</a></li>
+                <li ng-if="vm.page!='Clientele'"><a href="" ui-sref="Clientele">Clientele</a></li>
+                <li class="active" ng-if="vm.page=='Clientele'"><a href="" ui-sref="Clientele">Clientele</a></li>
+                <li ng-if="vm.page!='Contact'"><a href="" ui-sref="Contact">Contact Us</a></li>
+                <li class="active" ng-if="vm.page=='Contact'"><a href="" ui-sref="Contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!--/.container-->
+    </nav>
+    <!--/nav-->
+
+</header>
+<!--/header-->

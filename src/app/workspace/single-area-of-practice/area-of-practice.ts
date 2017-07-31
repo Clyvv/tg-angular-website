@@ -8,15 +8,20 @@ namespace glc.ui {
     }
 
     class Controller implements IExpertise {
-        $router: any;
+
+        page: string = "AreasOfPractice";
         service: string;
+
+        static $inject = ["$state", "$stateParams"];
+
+        constructor(public state: ng.ui.IStateService,
+            public params: ng.ui.IStateParamsService) {
+            this.service = params["service"];
+        }
         selected = (service: string) => {
-            this.$router.navigate(["SingleAreaOfPractice", { service: service }]);
+            this.state.go("SingleAreaOfPractice", { service: service });
         }
 
-        $routerOnActivate = (params: any) => {
-            this.service = params.params.service;
-        }
     }
 
     class Component implements ng.IComponentOptions {
@@ -28,7 +33,6 @@ namespace glc.ui {
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
-                $router: "<"
             };
 
         }

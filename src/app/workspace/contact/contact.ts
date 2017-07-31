@@ -8,6 +8,7 @@ namespace glc.ui {
     }
 
     class Controller implements IContact {
+        page: string = "Contact";
 
        
     }

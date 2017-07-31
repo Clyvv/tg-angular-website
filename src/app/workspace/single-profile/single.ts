@@ -9,21 +9,21 @@ namespace glc.ui {
 
     class Controller implements IPeople {
 
-        $router: any;
+        page: string = "Profiles";
         id: string;
         profiles: Array<data.ILawyerProfile> = [];
 
-        static $inject = ["GlcService"];
-        constructor(private glcService: data.IGlcService) {
+        static $inject = ["GlcService", "$state", "$stateParams"];
+        constructor(private glcService: data.IGlcService,
+            public state: ng.ui.IStateService,
+            public params: ng.ui.IStateParamsService) {
+            this.id = params["id"];
         }
 
         selected = (id: string) => {
-            this.$router.navigate(["SingleProfile", { id: id }]);
+            this.state.go("SingleProfile", { id: id });
         }
 
-        $routerOnActivate = (params: any) => {
-            this.id = params.params.id;
-        }
 
 
     }
@@ -37,7 +37,6 @@ namespace glc.ui {
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
-                $router: "<"
             };
 
         }

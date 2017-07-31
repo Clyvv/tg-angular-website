@@ -8,8 +8,8 @@ namespace glc.ui {
     }
 
     class Controller implements IPublication {
+        page: string = "Clientele";
 
-       
     }
 
     class Component implements ng.IComponentOptions {

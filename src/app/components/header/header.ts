@@ -1,6 +1,7 @@
 namespace glc.ui {
     "use strict";
 
+
     let app = angular.module("glc");
 
     interface IHeader extends ng.IController {
@@ -8,7 +9,8 @@ namespace glc.ui {
     }
 
     class Controller implements IHeader {
-        
+        page: string;
+
     }
 
     class Component implements ng.IComponentOptions {
@@ -20,6 +22,7 @@ namespace glc.ui {
             public controllerAs = "vm",
             public controller = Controller) {
             this.bindings = {
+                page: "<"
             };
 
         }
