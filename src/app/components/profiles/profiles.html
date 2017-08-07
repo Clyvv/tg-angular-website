@@ -1,21 +1,8 @@
 <div class="panel panel-default">
-  <div class="panel-heading">Partners</div>
   <div class="panel-body">
-    <ul class="nav nav-pills nav-stacked" ng-repeat="p in vm.profiles" ng-if="p.profileType=='partner'">
+    <ul class="nav nav-pills nav-stacked" ng-repeat="p in vm.profiles">
       <li role="presentation" ng-if="vm.id!=p.id"><a href="" ng-click="vm.changeProfile(p.id)">{{p.name}}</a></li>
       <li role="presentation" class="active" ng-if="vm.id==p.id"><a href="" ng-click="vm.changeProfile(p.id)">{{p.name}}</a></li>
-
-    </ul>
-  </div>
-</div>
-
-<div class="panel panel-default">
-  <div class="panel-heading">Associates</div>
-  <div class="panel-body">
-    <ul class="nav nav-pills nav-stacked" ng-repeat="p in vm.profiles" ng-if="p.profileType=='associate'">
-      <li role="presentation" ng-if="vm.id!=p.id"><a href="" ng-click="vm.changeProfile(p.id)">{{p.name}}</a></li>
-      <li role="presentation" class="active" ng-if="vm.id==p.id"><a href="" ng-click="vm.changeProfile(p.id)">{{p.name}}</a></li>
-
     </ul>
   </div>
 </div>

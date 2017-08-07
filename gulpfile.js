@@ -50,6 +50,17 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(destination + '/fonts'));
 });
 
+gulp.task('images', function () {
+  gulp.src([source + '/img/**/*'])
+    .pipe(gulp.dest(destination + '/img'));
+});
+
+gulp.task('assets', function () {
+  gulp.src([source + '/assets/**/*'])
+    .pipe(gulp.dest(destination + '/assets'));
+});
+
+
 gulp.task('watch', ['tsc'], function () {
   gulp.watch([source + '/app/**/*.ts'], ['tsc']);
 });
@@ -58,7 +69,7 @@ gulp.task('default', ['watch']);
 
 gulp.task('compile', ['clean'], function (done) {
   runSequence(
-    ['tsc', 'minify', 'fonts', 'html'], done);
+    ['tsc', 'minify', 'fonts', 'html','images','assets'], done);
 });
 
 gulp.task('test', ["tsc"], function (done) {

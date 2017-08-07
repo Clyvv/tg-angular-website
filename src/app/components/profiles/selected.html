@@ -1,7 +1,7 @@
 <legend>{{vm.profile.name}}</legend>
 <div class="col-xs-12">
   <div class="col-xs-4">
-    <img src="{{vm.profile.imgUrl}}" class="img-thumbnail" alt="{{vm.profile.id}}">
+    <img ng-src="{{vm.profile.imgUrl}}" class="img-thumbnail" alt="{{vm.profile.id}}">
   </div>
   <div class="col-xs-8">
     <div class="row">
@@ -52,7 +52,7 @@
       <p><strong>Main areas of Practice:</strong></p>
     </div>
     <div class="col-xs-12">
-      <p style="text-align: justify;">{{vm.profile.areaofPractice}}</p>
+      <p style="text-align: justify;" ng-bind-html='vm.profile.areaofPractice'></p>
     </div>
   </div>
 </div>
