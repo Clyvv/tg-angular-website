@@ -131,6 +131,7 @@ ul.social-share li a:hover {
   -moz-transition: opacity 100ms;
   -o-transition: opacity 100ms;
   transition: opacity 100ms;
+  
 }
 
 #main-slide .slider-content{
@@ -152,8 +153,12 @@ ul.social-share li a:hover {
 .carousel-indicators li{
 	width: 14px !important;
 	height: 14px !important;
-	border: 2px solid #fff !important;
+	border: 2px solid #00a885 !important;
 	margin: 1px !important;
+}
+
+.carousel-indicators li.active  {
+background-color: #000080;
 }
 
 
