@@ -12,7 +12,7 @@
         "imgUrl": "img/profiles/tichaona-govere.jpeg"
     },
     {
-        "id": "Sandra-Mbetu-Mangwiza",
+        "id": "sandra-mbetu-mangwiza",
         "profileType": "Associate Partner",
         "name": "Sandra Mbetu Mangwiza",
         "position": "Associate Partner",
@@ -20,7 +20,19 @@
         "qualification": "LLBS (HONS) - Bachelor of Laws Honours Degree from the University of Zimbabwe",
         "email": "smm@goverelawchambers.co.zw / smbetumangwiza@gmail.com",
         "status": "Admitted to practice as a Legal Practitioner, Notary Public and Conveyancer in Zimbabwe",
-        "areaofPractice": "Mrs Sandra Mbetu Mangwiza is a practical, efficient and result oriented individual who enjoys providing effective solutions to legal problems. She is a holder of a valid Bachelor of Laws Honours Degree from the Univerisity of Zimbabwe. She is duly registered with the High Court of Zimbabwe and the Law Society of Zimbabwe and is entitled to practice as a legal practitioner and Conveyancer. Since joining GLC in 2014, she has been involved in debt recoveries, fore closure, civil and criminal litigation. She has been involved in civil and criminal \tlitigation, deceased estates, labur and employment law, lease and sale agreements, conveyancing and corporate work. She is currently studying towards a Masters in Business Administration with the University of Gloucestershire.",
+        "areaofPractice": "Mrs Sandra Mbetu Mangwiza is a practical, efficient and result oriented individual who enjoys providing effective solutions to legal problems. She is a holder of a valid Bachelor of Laws Honours Degree from the Univerisity of Zimbabwe. She is duly registered with the High Court of Zimbabwe and the Law Society of Zimbabwe and is entitled to practice as a legal practitioner and Conveyancer. Since joining GLC in 2014, she has been involved in debt recoveries, fore closure, civil and criminal litigation, deceased estates, labur and employment law, lease and sale agreements, conveyancing and corporate work. She is currently studying towards a Masters in Business Administration with the University of Gloucestershire.",
         "imgUrl": "img/profiles/sandra-mbetu-mangwiza.jpeg"
+    },
+    {
+        "id": "rosewitter-madembo",
+        "profileType": "Associate Partner",
+        "name": "Rosewitter Madembo",
+        "position": "Associate Partner",
+        "yearOfRegistration": 2014,
+        "qualification": "LLBS (HONS) - Bachelor of Laws Honours Degree from the University of Zimbabwe",
+        "email": "smm@goverelawchambers.co.zw / smbetumangwiza@gmail.com",
+        "status": "Admitted to practice as a Legal Practitioner, Notary Public and Conveyancer in Zimbabwe",
+        "areaofPractice": "Mrs Sandra Mbetu Mangwiza is a practical, efficient and result oriented individual who enjoys providing effective solutions to legal problems. She is a holder of a valid Bachelor of Laws Honours Degree from the Univerisity of Zimbabwe. She is duly registered with the High Court of Zimbabwe and the Law Society of Zimbabwe and is entitled to practice as a legal practitioner and Conveyancer. Since joining GLC in 2014, she has been involved in debt recoveries, fore closure, civil and criminal litigation, deceased estates, labur and employment law, lease and sale agreements, conveyancing and corporate work. She is currently studying towards a Masters in Business Administration with the University of Gloucestershire.",
+        "imgUrl": "img/profiles/rosewitter-madembo.jpeg"
     }
 ]
