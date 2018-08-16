@@ -11,6 +11,8 @@ namespace glc.ui {
     class Controller implements IHeader {
         page: string;
 
+        $onInit = () => { }
+
     }
 
     class Component implements ng.IComponentOptions {

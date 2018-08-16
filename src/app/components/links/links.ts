@@ -10,6 +10,8 @@ namespace glc.ui {
     class Controller implements ILinks {
         page: string;
 
+        $onInit = () => { }
+
         currentPage = (page: string): boolean => {
             let result: boolean = false;
             if (this.page == page) {

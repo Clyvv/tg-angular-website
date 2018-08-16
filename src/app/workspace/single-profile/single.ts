@@ -20,6 +20,8 @@ namespace glc.ui {
             this.id = params["id"];
         }
 
+        $onInit = () => { }
+        
         selected = (id: string) => {
             this.state.go("SingleProfile", { id: id });
         }
