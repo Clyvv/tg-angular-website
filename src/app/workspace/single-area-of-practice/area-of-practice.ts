@@ -18,6 +18,9 @@ namespace glc.ui {
             public params: ng.ui.IStateParamsService) {
             this.service = params["service"];
         }
+
+        $onInit = () => { }
+        
         selected = (service: string) => {
             this.state.go("SingleAreaOfPractice", { service: service });
         }

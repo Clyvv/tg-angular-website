@@ -10,7 +10,8 @@ namespace glc.ui {
     class Controller implements IContact {
         page: string = "Contact";
 
-       
+        $onInit = () => { }
+        
     }
 
     class Component implements ng.IComponentOptions {

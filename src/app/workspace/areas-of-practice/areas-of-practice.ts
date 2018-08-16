@@ -14,6 +14,9 @@ namespace glc.ui {
 
         constructor(public state: ng.ui.IStateService) {
         }
+
+        $onInit = () => { }
+
         selected = (service: string) => {
             this.state.go("SingleAreaOfPractice", { service: service });
         }

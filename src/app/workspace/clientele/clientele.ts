@@ -10,6 +10,8 @@ namespace glc.ui {
     class Controller implements IPublication {
         page: string = "Clientele";
 
+        $onInit = () => { }
+        
     }
 
     class Component implements ng.IComponentOptions {
